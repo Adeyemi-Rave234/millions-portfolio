@@ -1,0 +1,292 @@
+/*==============================
+Large Desktop
+==============================*/
+
+@media (max-width:1400px){
+
+section{
+padding:100px 6%;
+}
+
+header{
+padding:20px 6%;
+}
+
+.terminal{
+width:470px;
+height:470px;
+}
+
+}
+
+/*==============================
+Laptop
+==============================*/
+
+@media (max-width:1200px){
+
+.hero-left h1{
+font-size:3.5rem;
+}
+
+.hero-left h2{
+font-size:1.8rem;
+}
+
+.showcase{
+
+grid-template-columns:1fr;
+
+gap:50px;
+
+}
+
+.showcase:nth-child(even) .showcase-image{
+order:1;
+}
+
+.showcase:nth-child(even) .showcase-content{
+order:2;
+}
+
+.footer-container{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+/*==============================
+Tablet
+==============================*/
+
+@media (max-width:992px){
+
+.nav-links{
+display:none;
+}
+
+#hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero-left p{
+
+margin:auto auto 40px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.about-container,
+.skills-container,
+.contact-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.services-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-container{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.footer-brand p{
+
+margin:auto;
+
+}
+
+.footer-links,
+.footer-social{
+
+align-items:center;
+
+}
+
+}
+/*==============================
+Mobile
+==============================*/
+
+@media (max-width:768px){
+
+section{
+
+padding:80px 5%;
+
+}
+
+.hero-left h1{
+
+font-size:2.8rem;
+
+}
+
+.hero-left h2{
+
+font-size:1.4rem;
+
+}
+
+.section-title h2{
+
+font-size:2.2rem;
+
+}
+
+.terminal{
+
+width:100%;
+
+height:auto;
+
+padding:25px;
+
+}
+
+.terminal h3{
+
+font-size:2.5rem;
+
+}
+
+.services-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-bottom{
+
+text-align:center;
+
+}
+
+.project-number{
+
+font-size:3rem;
+
+}
+
+.showcase-content h3{
+
+font-size:2rem;
+
+}
+
+}
+
+/*==============================
+Small Phones
+==============================*/
+
+@media (max-width:480px){
+
+.logo{
+
+font-size:1rem;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.badge{
+
+font-size:.7rem;
+
+}
+
+.contact-left h2{
+
+font-size:2rem;
+
+}
+
+.contact-right input,
+.contact-right textarea{
+
+padding:15px;
+
+}
+
+}
+
+@media (max-width:992px){
+
+.menu-btn{
+
+display:flex;
+
+}
+
+.nav-links{
+
+position:fixed;
+
+top:80px;
+
+right:-100%;
+
+width:300px;
+
+height:calc(100vh - 80px);
+
+background:rgba(5,8,7,.85);
+
+backdrop-filter:blur(30px);
+
+display:flex;
+
+flex-direction:column;
+
+padding:40px;
+
+gap:30px;
+
+transition:.5s ease;
+
+border-left:1px solid rgba(168,255,62,.15);
+
+}
+
+.nav-links.active{
+
+right:0;
+
+}
+
+}
