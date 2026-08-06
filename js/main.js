@@ -1,3 +1,4 @@
+
 window.addEventListener("load", () => {
     document.body.classList.remove("loading");
 });
@@ -176,3 +177,105 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+
+const terminal = document.getElementById("terminal-output");
+const terminalScreens = [
+
+`> boot experience.exe
+
+Initializing...
+
+Loading Developer Profile...
+
+██████████████████ 100%
+
+✓ HTML Loaded
+
+✓ CSS Loaded
+
+✓ JavaScript Loaded
+
+✓ Git Loaded
+
+✓ Responsive Design Loaded
+
+✓ Portfolio Ready
+
+> Waiting for next challenge...
+`,
+
+`> git log --oneline
+
+a91d2f Created first website
+
+b782fd Learned Flexbox
+
+91ac3e Responsive Layouts
+
+c921aa JavaScript Projects
+
+2bc921 Portfolio Completed
+
+Ready for deployment...
+`,
+
+`> npm run experience
+
+Compiling...
+
+Success.
+
+Watching for new opportunities...
+`
+
+];
+
+const typingSpeed = 18;
+const pauseTime = 2500;
+
+
+function sleep(ms){
+
+    return new Promise(resolve=>{
+
+        setTimeout(resolve,ms);
+
+    });
+
+}
+
+async function typeText(text){
+
+    terminal.textContent = "";
+
+    for(let char of text){
+
+        terminal.textContent += char;
+
+        await sleep(typingSpeed);
+
+    }
+
+}
+
+async function runTerminal(){
+
+    while(true){
+
+        for(const screen of terminalScreens){
+
+            await typeText(screen);
+
+            await sleep(pauseTime);
+
+        }
+
+    }
+
+}
+
+runTerminal();
+
+
+

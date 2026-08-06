@@ -1,0 +1,60 @@
+/* ===============================
+   ANIMATION BASE
+================================= 
+
+.reveal {
+    opacity: 0;
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+    will-change: opacity, transform;
+}
+
+===============================
+   FADE LEFT
+================================= 
+
+.fade-left {
+    transform: translateX(-80px);
+}
+
+ ===============================
+   FADE RIGHT
+================================= 
+
+.fade-right {
+    transform: translateX(80px);
+}
+
+===============================
+   FADE UP
+================================= 
+
+.fade-up {
+    transform: translateY(80px);
+}
+
+/* ===============================
+   FADE DOWN
+================================= 
+
+.fade-down {
+    transform: translateY(-80px);
+}
+
+ ===============================
+   ZOOM
+================================= 
+
+.zoom {
+    transform: scale(.75);
+}
+
+ ===============================
+   ACTIVE
+================================= 
+
+.reveal.active{
+    opacity:1;
+    transform:translate(0,0) scale(1);
+}
